@@ -5,8 +5,6 @@
       "use": "@vercel/static-build"
     }
   ],
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
-  ]
+  "outputDirectory": ".",
+  "cleanUrls": true
 }

@@ -94,6 +94,8 @@ Option 1 — Deploy from your Git provider (recommended)
    - Framework Preset: choose `Other` or `Static`.
    - Build Command: `npm run build`
    - Output Directory: leave empty or set to `.` (we're serving root HTML files).
+
+If you use `vercel.json`, the project is configured to publish the repository root after build via `"outputDirectory": "."`.
 4. Deploy. Vercel will run `npm install` then `npm run build` and publish the static files.
 
 Option 2 — Vercel CLI (quick deploy from your machine)
