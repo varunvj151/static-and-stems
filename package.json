@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "Static & Stems premium static site with TypeScript-powered site behaviors.",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "watch": "tsc --project tsconfig.json --watch"
+    "build": "node ./node_modules/typescript/bin/tsc --project tsconfig.json",
+    "watch": "node ./node_modules/typescript/bin/tsc --project tsconfig.json --watch",
+    "serve": "npx http-server -c-1 . -p 8080",
+    "dev": "npm run build && npm run serve"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "typescript": "^5.5.4"
   }
 }

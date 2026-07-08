@@ -22,19 +22,26 @@ npm install
 npm run build
 ```
 
+> Note: the build script uses `node ./node_modules/typescript/bin/tsc --project tsconfig.json` to avoid permission issues when Vercel runs the build.
+
 During development you can run the TypeScript compiler in watch mode:
 
 ```powershell
 npm run watch
 ```
 
-Start a local static server (serves the repository root)
-
-Option A — fastest (Node):
+Start a local preview server and get the localhost link in the terminal:
 
 ```powershell
-npx http-server -c-1 . -p 8080
+npm run serve
 # open http://127.0.0.1:8080 or http://localhost:8080
+```
+
+Or run build + serve in one command:
+
+```powershell
+npm run dev
+# build then open http://127.0.0.1:8080 or http://localhost:8080
 ```
 
 If port `8080` is already in use, pick an alternate port, for example `8081`:
