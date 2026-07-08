@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static & Stems premium static site with TypeScript-powered site behaviors.",
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "build": "node ./node_modules/typescript/bin/tsc --project tsconfig.json",

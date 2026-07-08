@@ -12,7 +12,7 @@ Quick start (Windows)
 
 Prerequisites
 
-- Node.js and npm installed (recommended Node 18+).
+- Node.js and npm installed (recommended Node 24+).
 
 Install dependencies and build
 
@@ -41,8 +41,10 @@ Or run build + serve in one command:
 
 ```powershell
 npm run dev
-# build then open http://127.0.0.1:8080 or http://localhost:8080
+# compiles TypeScript, then starts the local server at http://127.0.0.1:8080
 ```
+
+Use `npm run dev` when you want one command to both build the project and open it locally. If you only need to serve existing build files, use `npm run serve` instead.
 
 If port `8080` is already in use, pick an alternate port, for example `8081`:
 
