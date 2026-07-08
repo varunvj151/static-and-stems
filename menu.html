@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Static &amp; Stems</title>
+<meta name="description" content="Coffee, tea, and food menu at Static & Stems — small-batch roasted, made to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <svg class="pre-vinyl" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#241014" stroke="#C08A4E" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="#C08A4E"/><circle cx="50" cy="50" r="4" fill="#161010"/></svg>
+</div>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#161010" stroke="#C08A4E" stroke-width="1.5"/><circle cx="12" cy="12" r="3.4" fill="#C08A4E"/><circle cx="12" cy="12" r="1" fill="#161010"/></svg>
+      Static &amp; Stems
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Visit</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Reserve a Table</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="sessions.html">Sessions</a>
+  <a href="menu.html">Menu</a>
+  <a href="contact.html">Visit</a>
+  <a href="contact.html" class="nav-cta">Reserve a Table</a>
+</div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Menu</div>
+  <span class="label">From the counter</span>
+  <h1>Small-batch beans, made to order.</h1>
+  <p>Roasted in-house every Monday. Filter below to jump straight to what you're after.</p>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coffee">Coffee</button>
+      <button class="filter-btn" data-filter="tea">Tea &amp; Non-Coffee</button>
+      <button class="filter-btn" data-filter="food">Food</button>
+      <button class="filter-btn" data-filter="specials">Seasonal Specials</button>
+    </div>
+
+    <div class="menu-grid reveal">
+      <!-- COFFEE -->
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">Side A Filter</span><span class="desc">Our house blend — chocolate, orange peel, low acidity</span></div>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">Needle Drop Espresso</span><span class="desc">Single-origin shot, changes monthly</span></div>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">B-Side Cold Brew</span><span class="desc">18-hour steep, served over one big cube</span></div>
+        <span class="price">₹210</span>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">Analog Cortado</span><span class="desc">Equal parts espresso and steamed milk</span></div>
+        <span class="price">₹190</span>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">Deep Cut Pour-Over</span><span class="desc">Slow bar, single-origin, brewed to order — 8 min wait</span></div>
+        <span class="price">₹240</span>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div><span class="name">House Cappuccino</span><span class="desc">Classic ratio, dusted with cocoa</span></div>
+        <span class="price">₹170</span>
+      </div>
+
+      <!-- TEA / NON-COFFEE -->
+      <div class="menu-item" data-category="tea">
+        <div><span class="name">Tonearm Tonic</span><span class="desc">Non-alcoholic — ginger, lime, soda</span></div>
+        <span class="price">₹160</span>
+      </div>
+      <div class="menu-item" data-category="tea">
+        <div><span class="name">Smoked Assam Chai</span><span class="desc">Hand-ground spice mix, brewed strong</span></div>
+        <span class="price">₹130</span>
+      </div>
+      <div class="menu-item" data-category="tea">
+        <div><span class="name">Cold Hibiscus Steep</span><span class="desc">Tart, lightly sweet, served over ice</span></div>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-item" data-category="tea">
+        <div><span class="name">Steamed Oat Milk &amp; Honey</span><span class="desc">For the decaf crowd after 9pm</span></div>
+        <span class="price">₹140</span>
+      </div>
+
+      <!-- FOOD -->
+      <div class="menu-item" data-category="food">
+        <div><span class="name">Vinyl Toast</span><span class="desc">Sourdough, whipped ricotta, chili honey</span></div>
+        <span class="price">₹220</span>
+      </div>
+      <div class="menu-item" data-category="food">
+        <div><span class="name">Late Night Bhajiya Plate</span><span class="desc">House chutney, served after 8pm only</span></div>
+        <span class="price">₹190</span>
+      </div>
+      <div class="menu-item" data-category="food">
+        <div><span class="name">Record Sleeve Cookie</span><span class="desc">Dark chocolate, sea salt, baked daily</span></div>
+        <span class="price">₹90</span>
+      </div>
+      <div class="menu-item" data-category="food">
+        <div><span class="name">Roastery Banana Bread</span><span class="desc">Made with spent espresso grounds</span></div>
+        <span class="price">₹120</span>
+      </div>
+      <div class="menu-item" data-category="food">
+        <div><span class="name">Grilled Paneer Toastie</span><span class="desc">Smoked paprika, pickled onion</span></div>
+        <span class="price">₹210</span>
+      </div>
+
+      <!-- SEASONAL SPECIALS -->
+      <div class="menu-item" data-category="specials">
+        <div><span class="name">Monsoon Cardamom Latte</span><span class="desc">Seasonal, available July–September<span class="tag">Limited</span></span></div>
+        <span class="price">₹230</span>
+      </div>
+      <div class="menu-item" data-category="specials">
+        <div><span class="name">B-Side Affogato</span><span class="desc">Espresso over vanilla, cocoa nib crunch<span class="tag">New</span></span></div>
+        <span class="price">₹210</span>
+      </div>
+      <div class="menu-item" data-category="specials">
+        <div><span class="name">Thursday Selector's Blend</span><span class="desc">A different single-origin every Thursday, picked by Devika<span class="tag">Weekly</span></span></div>
+        <span class="price">₹200</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-wine">
+  <div class="wrap-narrow reveal text-center">
+    <span class="label">A note on the menu</span>
+    <h2 style="margin-top:10px;">Everything's made to order.</h2>
+    <p style="margin-top:14px;">Slow bar drinks (pour-over, cold steeps) take longer on purpose — if you're short on time before a session starts, the espresso-based drinks are quickest. Ask the counter if you're not sure what to get; we'd rather talk you into the right cup than sell you the wrong one.</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap reveal">
+    <span class="label">Hungry, thirsty, or both?</span>
+    <h2>Walk in any time we're open — no reservation needed for the counter.</h2>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-dark">Visit Us</a>
+      <a href="sessions.html" class="btn-outline-dark">See Listening Sessions</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Static &amp; Stems</div>
+        <p>A small vinyl listening bar and coffee roastery. One record at a time, played all the way through.</p>
+        <div class="newsletter" style="margin-top:20px;">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="button">Join</button>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sessions.html">Listening Sessions</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Visit Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>14 Analog Lane, Bilaspur</li>
+          <li>hello@staticandstems.in</li>
+          <li>+91 98765 43210</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Discogs Wantlist</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Static &amp; Stems. A concept site — built as an AI website-generation exercise.</span>
+      <span>Designed &amp; generated with Claude.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script type="module" src="assets/js/build/main.js"></script>
+</body>
+</html>

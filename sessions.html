@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listening Sessions — Static &amp; Stems</title>
+<meta name="description" content="Weekly listening sessions, bring-your-own-wax nights, and private room bookings at Static & Stems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <svg class="pre-vinyl" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#241014" stroke="#C08A4E" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="#C08A4E"/><circle cx="50" cy="50" r="4" fill="#161010"/></svg>
+</div>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#161010" stroke="#C08A4E" stroke-width="1.5"/><circle cx="12" cy="12" r="3.4" fill="#C08A4E"/><circle cx="12" cy="12" r="1" fill="#161010"/></svg>
+      Static &amp; Stems
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Visit</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Reserve a Table</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="sessions.html">Sessions</a>
+  <a href="menu.html">Menu</a>
+  <a href="contact.html">Visit</a>
+  <a href="contact.html" class="nav-cta">Reserve a Table</a>
+</div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Sessions</div>
+  <span class="label">What's on</span>
+  <h1>Seven sessions a week, one rule every night.</h1>
+  <p>Whatever's on the platter plays start to finish. Pick a night below, or book the back room for something private.</p>
+</section>
+
+<section class="section-tight">
+  <div class="wrap reveal">
+    <table class="hours-table">
+      <tbody>
+        <tr><td>Tuesday</td><td>Bring Your Own Wax — 7–10pm</td></tr>
+        <tr><td>Wednesday</td><td>Quiet listening — house selections, low volume</td></tr>
+        <tr><td>Thursday</td><td>Resident Selector Night — Devika Rao, 7–11pm</td></tr>
+        <tr><td>Friday</td><td>Resident Selector Night — guest selector, 7–11pm</td></tr>
+        <tr><td>Saturday</td><td>Resident Selector Night — Meher Anand, 7–11pm</td></tr>
+        <tr><td>Sunday</td><td>Slow Sunday — jazz &amp; ambient, all day</td></tr>
+        <tr class="closed"><td>Monday</td><td>Closed — roasting day</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="bg-wine">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">The regular sessions</span>
+      <h2>Three ways to spend an evening</h2>
+    </div>
+    <div class="card-grid-3 reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="none" stroke="#C08A4E" stroke-width="2"/><circle cx="22" cy="22" r="6" fill="#C08A4E"/></svg>
+        <h3>Resident Selector Nights</h3>
+        <p>Thu–Sat, 7–11pm. Our residents run a themed set from the shelves — no requests, just trust the selector. Different resident, different mood, every night.</p>
+        <span class="meta">Walk-in · no cover</span>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><rect x="6" y="6" width="32" height="32" rx="4" fill="none" stroke="#C08A4E" stroke-width="2"/><path d="M16 22h12M22 16v12" stroke="#C08A4E" stroke-width="2"/></svg>
+        <h3>Bring Your Own Wax</h3>
+        <p>Tuesdays, 7–10pm. Bring up to 3 records from your own collection and take a 20-minute turn on the main system. Sign-up sheet at the counter from 6pm.</p>
+        <span class="meta">₹150 cover, includes filter coffee</span>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><path d="M8 34V16l14-8 14 8v18" fill="none" stroke="#C08A4E" stroke-width="2" stroke-linejoin="round"/></svg>
+        <h3>Private Listening Room</h3>
+        <p>Book the back room for a small group of up to 10 — your own crate, your own volume, snacks and pour-over on request. Great for birthdays and listening parties.</p>
+        <span class="meta">From ₹2,500 for 2 hours</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BOOKING FORM ========== -->
+<section>
+  <div class="wrap-narrow">
+    <div class="section-head reveal">
+      <span class="label">Book the back room</span>
+      <h2>Reserve the private listening room</h2>
+      <p>Tell us the date, headcount, and what kind of night you're after — we'll confirm within a day.</p>
+    </div>
+
+    <form data-validate class="reveal" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="s-name">Full name</label>
+          <input type="text" id="s-name" name="name" required placeholder="Your name">
+          <span class="error-msg">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="s-phone">Phone number</label>
+          <input type="tel" id="s-phone" name="phone" required placeholder="+91 00000 00000">
+          <span class="error-msg">Please enter a valid phone number.</span>
+        </div>
+        <div class="field">
+          <label for="s-date">Preferred date</label>
+          <input type="date" id="s-date" name="date" required>
+          <span class="error-msg">Please choose a date.</span>
+        </div>
+        <div class="field">
+          <label for="s-guests">Number of guests</label>
+          <select id="s-guests" name="guests" required>
+            <option value="">Select...</option>
+            <option>2–4</option>
+            <option>5–7</option>
+            <option>8–10</option>
+          </select>
+          <span class="error-msg">Please select a group size.</span>
+        </div>
+        <div class="field full">
+          <label for="s-occasion">What's the occasion? (optional)</label>
+          <textarea id="s-occasion" name="occasion" placeholder="Birthday, listening party, first date — no judgment either way."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary btn-block" style="margin-top:24px;">Request Booking</button>
+      <div class="form-success">
+        <strong>Request received.</strong> We'll text or call to confirm your slot within 24 hours.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="bg-wine">
+  <div class="wrap-narrow">
+    <div class="section-head reveal">
+      <span class="label">Before you come</span>
+      <h2>A few things people usually ask</h2>
+    </div>
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-trigger">Do I need to book for the regular sessions?<span class="plus">+</span></button>
+        <div class="accordion-panel"><p>No — Resident Selector Nights and Slow Sunday are walk-in only, no cover charge. Tuesdays (Bring Your Own Wax) has a sign-up sheet at the counter from 6pm, first come first served.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can I request a song?<span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Not during Resident Selector Nights — that's the whole point, you're trusting the selector's set. If you want to control the platter yourself, that's what Tuesdays and the private room are for.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What if my records get damaged?<span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Our staff handle every record on and off the platter — you won't need to touch the tonearm yourself. In four years we've had zero damage claims, and we intend to keep it that way.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Is the private room kid-friendly?<span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Daytime bookings, sure. Evening sessions after 7pm tend to run later and louder, so we'd suggest an earlier slot if you're bringing little ones.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Do you serve alcohol?<span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Not currently — we're coffee, tea, and a small food menu. The Tonearm Tonic is our answer to a proper evening drink, minus the alcohol.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap reveal">
+    <span class="label">Ready for a night in the room?</span>
+    <h2>Walk in for a session, or book ahead for the back room.</h2>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-dark">Reserve a Table</a>
+      <a href="menu.html" class="btn-outline-dark">See the Menu</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Static &amp; Stems</div>
+        <p>A small vinyl listening bar and coffee roastery. One record at a time, played all the way through.</p>
+        <div class="newsletter" style="margin-top:20px;">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="button">Join</button>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sessions.html">Listening Sessions</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Visit Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>14 Analog Lane, Bilaspur</li>
+          <li>hello@staticandstems.in</li>
+          <li>+91 98765 43210</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Discogs Wantlist</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Static &amp; Stems. A concept site — built as an AI website-generation exercise.</span>
+      <span>Designed &amp; generated with Claude.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script type="module" src="assets/js/build/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "static-and-stems",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static & Stems premium static site with TypeScript-powered site behaviors.",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

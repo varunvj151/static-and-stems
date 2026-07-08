@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Us — Static &amp; Stems</title>
+<meta name="description" content="Hours, location, and reservations for Static & Stems, Bilaspur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <svg class="pre-vinyl" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#241014" stroke="#C08A4E" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="#C08A4E"/><circle cx="50" cy="50" r="4" fill="#161010"/></svg>
+</div>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#161010" stroke="#C08A4E" stroke-width="1.5"/><circle cx="12" cy="12" r="3.4" fill="#C08A4E"/><circle cx="12" cy="12" r="1" fill="#161010"/></svg>
+      Static &amp; Stems
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Visit</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Reserve a Table</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="sessions.html">Sessions</a>
+  <a href="menu.html">Menu</a>
+  <a href="contact.html">Visit</a>
+  <a href="contact.html" class="nav-cta">Reserve a Table</a>
+</div>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Visit</div>
+  <span class="label">Come find us</span>
+  <h1>14 Analog Lane, Bilaspur.</h1>
+  <p>Walk-ins welcome for coffee any time we're open. Reserve ahead for listening nights and the private room.</p>
+</section>
+
+<section class="section-tight">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;">
+    <div class="reveal">
+      <div class="map-box">
+        <div class="map-pin">
+          <div class="dot"></div>
+          <span>14 Analog Lane, Bilaspur, Chhattisgarh</span>
+          <span>Hidden one block off Station Road — easy to find once you’re in the neighborhood.</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <h3 style="margin-bottom:20px;">Hours</h3>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Tuesday – Sunday</td><td>8:00am – 11:00pm</td></tr>
+          <tr class="closed"><td>Monday</td><td>Closed (roasting day)</td></tr>
+        </tbody>
+      </table>
+      <h3 style="margin:32px 0 20px;">Reach us</h3>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Phone</td><td>+91 98765 43210</td></tr>
+          <tr><td>Email</td><td>hello@staticandstems.in</td></tr>
+          <tr><td>Address</td><td>14 Analog Lane, Bilaspur — 495001</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT FORM ========== -->
+<section class="bg-wine">
+  <div class="wrap-narrow">
+    <div class="section-head reveal">
+      <span class="label">Reserve a table</span>
+      <h2>Send us a note</h2>
+      <p>For counter seating or a listening-night table. Booking the private room? Use the <a href="sessions.html" style="color:var(--brass-light); text-decoration:underline;">Sessions page</a> instead.</p>
+    </div>
+
+    <form data-validate class="reveal" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="c-name">Full name</label>
+          <input type="text" id="c-name" name="name" required placeholder="Your name">
+          <span class="error-msg">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" name="email" required placeholder="you@example.com">
+          <span class="error-msg">Please enter a valid email.</span>
+        </div>
+        <div class="field">
+          <label for="c-date">Date</label>
+          <input type="date" id="c-date" name="date" required>
+          <span class="error-msg">Please choose a date.</span>
+        </div>
+        <div class="field">
+          <label for="c-time">Preferred time</label>
+          <select id="c-time" name="time" required>
+            <option value="">Select...</option>
+            <option>Morning (8am–12pm)</option>
+            <option>Afternoon (12–5pm)</option>
+            <option>Evening session (7–11pm)</option>
+          </select>
+          <span class="error-msg">Please select a time.</span>
+        </div>
+        <div class="field full">
+          <label for="c-msg">Anything we should know? (optional)</label>
+          <textarea id="c-msg" name="message" placeholder="Party size, accessibility needs, or a record you're hoping to hear."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary btn-block" style="margin-top:24px;">Send Reservation Request</button>
+      <div class="form-success">
+        <strong>Thanks — got it.</strong> We'll confirm by email or phone within a day.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap-narrow reveal text-center">
+    <span class="label">Follow along</span>
+    <h2 style="margin-top:10px;">See what's spinning this week</h2>
+    <p style="margin-top:14px; margin-bottom:30px;">We post the week's session lineup and roast notes on Instagram every Monday.</p>
+    <a href="#" class="btn-ghost">@staticandstems on Instagram →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Static &amp; Stems</div>
+        <p>A small vinyl listening bar and coffee roastery. One record at a time, played all the way through.</p>
+        <div class="newsletter" style="margin-top:20px;">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="button">Join</button>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sessions.html">Listening Sessions</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Visit Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>14 Analog Lane, Bilaspur</li>
+          <li>hello@staticandstems.in</li>
+          <li>+91 98765 43210</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Discogs Wantlist</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Static &amp; Stems. A concept site — built as an AI website-generation exercise.</span>
+      <span>Designed &amp; generated with Claude.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script type="module" src="assets/js/build/main.js"></script>
+</body>
+</html>
