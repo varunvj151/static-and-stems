@@ -44,14 +44,19 @@ npm run dev
 # compiles TypeScript, then starts the local server at http://127.0.0.1:8080
 ```
 
-Use `npm run dev` when you want one command to both build the project and open it locally. If you only need to serve existing build files, use `npm run serve` instead.
-
-If port `8080` is already in use, pick an alternate port, for example `8081`:
+If port `8080` is already in use, run the alternate port scripts:
 
 ```powershell
-npx http-server -c-1 . -p 8081
+npm run serve:8081
 # open http://127.0.0.1:8081
 ```
+
+```powershell
+npm run dev:8081
+# build then open http://127.0.0.1:8081
+```
+
+Use `npm run dev` when you want one command to both build the project and open it locally. Use `npm run serve` if you only need to serve existing built files.
 
 Option B — Python (if installed):
 
