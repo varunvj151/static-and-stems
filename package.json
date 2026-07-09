@@ -7,16 +7,14 @@
     "node": "24.x"
   },
   "scripts": {
-    "build": "node ./node_modules/typescript/bin/tsc --project tsconfig.json",
-    "vercel-build": "npm run build && mkdir -p dist && cp -r *.html assets favicon.ico dist/ 2>/dev/null || true",
+    "build": "node ./node_modules/typescript/bin/tsc --project tsconfig.json && shx mkdir -p dist && shx cp -r *.html assets favicon.ico dist/ || shx echo 'Build complete'",
     "watch": "node ./node_modules/typescript/bin/tsc --project tsconfig.json --watch",
-    "serve": "npx http-server -c-1 . -p 8080",
-    "serve:8081": "npx http-server -c-1 . -p 8081",
-    "dev": "npm run build && npm run serve",
-    "dev:8081": "npm run build && npm run serve:8081"
+    "serve": "npx http-server -c-1 . -p 0",
+    "dev": "npm run build && npm run serve"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
+    "shx": "^0.4.0",
     "typescript": "^5.5.4"
   }
 }

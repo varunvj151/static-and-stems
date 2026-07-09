@@ -34,26 +34,14 @@ Start a local preview server and get the localhost link in the terminal:
 
 ```powershell
 npm run serve
-# open http://127.0.0.1:8080 or http://localhost:8080
+# The server will automatically pick an available port and print the localhost link in the terminal
 ```
 
 Or run build + serve in one command:
 
 ```powershell
 npm run dev
-# compiles TypeScript, then starts the local server at http://127.0.0.1:8080
-```
-
-If port `8080` is already in use, run the alternate port scripts:
-
-```powershell
-npm run serve:8081
-# open http://127.0.0.1:8081
-```
-
-```powershell
-npm run dev:8081
-# build then open http://127.0.0.1:8081
+# compiles TypeScript, then starts the local server on an available port
 ```
 
 Use `npm run dev` when you want one command to both build the project and open it locally. Use `npm run serve` if you only need to serve existing built files.

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static &amp; Stems — Vinyl Listening Bar &amp; Roastery, Bilaspur</title>
+<meta name="description" content="A vinyl listening bar and small-batch coffee roastery in Bilaspur. Resident selector nights, bring-your-own-wax evenings, and a private listening room.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <svg class="pre-vinyl" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#241014" stroke="#C08A4E" stroke-width="2"/><circle cx="50" cy="50" r="18" fill="#C08A4E"/><circle cx="50" cy="50" r="4" fill="#161010"/></svg>
+</div>
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#161010" stroke="#C08A4E" stroke-width="1.5"/><circle cx="12" cy="12" r="3.4" fill="#C08A4E"/><circle cx="12" cy="12" r="1" fill="#161010"/></svg>
+      Static &amp; Stems
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Visit</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Reserve a Table</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="sessions.html">Sessions</a>
+  <a href="menu.html">Menu</a>
+  <a href="contact.html">Visit</a>
+  <a href="contact.html" class="nav-cta">Reserve a Table</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="page-hero" style="text-align:left; padding-top:130px;">
+  <div class="wrap" style="display:grid; grid-template-columns:1.05fr 0.95fr; gap:48px; align-items:center; text-align:left;">
+    <div class="reveal is-visible">
+      <span class="label">Vinyl Listening Bar &amp; Roastery · Bilaspur</span>
+      <h1 style="margin-top:14px; max-width:none;">Slow coffee.<br>Loud <em style="font-style:italic; color:var(--brass-light);">vinyl.</em><br>No skips.</h1>
+      <p style="margin:0 0 30px; max-width:44ch;">Static &amp; Stems is a listening room built around one rule: one record, played all the way through, on a proper hi-fi rig — paired with coffee we roast ourselves, four blocks from the counter.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-bottom:36px;">
+        <a href="contact.html" class="btn-primary">Reserve a Table</a>
+        <a href="sessions.html" class="btn-ghost">See Listening Sessions</a>
+      </div>
+      <div style="display:flex; gap:34px;">
+        <div><strong style="display:block; font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--brass-light);" data-count="1400" data-suffix="+">0</strong><span class="label" style="color:var(--cream-dim); letter-spacing:0.02em; text-transform:none; font-weight:400;">Records in rotation</span></div>
+        <div><strong style="display:block; font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--brass-light);" data-count="7">0</strong><span class="label" style="color:var(--cream-dim); letter-spacing:0.02em; text-transform:none; font-weight:400;">Weekly sessions</span></div>
+        <div><strong style="display:block; font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--brass-light);">2019</strong><span class="label" style="color:var(--cream-dim); letter-spacing:0.02em; text-transform:none; font-weight:400;">Since</span></div>
+      </div>
+    </div>
+    <div class="reveal is-visible" style="display:flex; justify-content:center;">
+      <svg viewBox="0 0 300 300" style="width:100%; max-width:380px; animation:spin 9s linear infinite;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spinning vinyl record illustration">
+        <circle cx="150" cy="150" r="148" fill="#141010" stroke="#2A1E1A" stroke-width="2"/>
+        <circle cx="150" cy="150" r="130" fill="none" stroke="#241C18" stroke-width="1"/>
+        <circle cx="150" cy="150" r="112" fill="none" stroke="#241C18" stroke-width="1"/>
+        <circle cx="150" cy="150" r="94" fill="none" stroke="#241C18" stroke-width="1"/>
+        <circle cx="150" cy="150" r="76" fill="none" stroke="#241C18" stroke-width="1"/>
+        <circle cx="150" cy="150" r="58" fill="#C08A4E"/>
+        <circle cx="150" cy="150" r="52" fill="#3B1418"/>
+        <text x="150" y="145" text-anchor="middle" fill="#E0B478" font-family="Playfair Display, serif" font-size="14" font-weight="700">STATIC</text>
+        <text x="150" y="163" text-anchor="middle" fill="#E0B478" font-family="Space Mono, monospace" font-size="9" letter-spacing="2">&amp; STEMS CO.</text>
+        <circle cx="150" cy="150" r="5" fill="#141010"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="section-tight">
+  <div class="wrap reveal">
+    <div class="stats-strip">
+      <div class="stat-cell"><strong data-count="1400" data-suffix="+">0</strong><span>Records in the crate wall</span></div>
+      <div class="stat-cell"><strong data-count="7">0</strong><span>Sessions run every week</span></div>
+      <div class="stat-cell"><strong data-count="12" data-suffix="kg">0</strong><span>Beans roasted weekly</span></div>
+      <div class="stat-cell"><strong data-count="2019">0</strong><span>Open since</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT TEASER ================= -->
+<section class="bg-wine">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
+    <div class="reveal">
+      <span class="label">The idea</span>
+      <h2 style="margin-top:10px;">Two obsessions under one roof.</h2>
+      <p style="margin-bottom:16px;">Static &amp; Stems started as an argument between a coffee roaster and a record collector about which deserved more patience. Neither won, so the shop does both properly: beans roasted in small batches on-site, and a listening room built around a single rule — whatever's on the platter plays start to finish.</p>
+      <p style="margin-bottom:26px;">Weekday mornings, it's a quiet roastery counter. Weekend evenings, it becomes a proper listening bar.</p>
+      <a href="about.html" class="btn-ghost">Read Our Story →</a>
+    </div>
+    <svg class="reveal" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concentric groove illustration">
+      <g fill="none" stroke="#C08A4E" stroke-opacity="0.5">
+        <circle cx="200" cy="200" r="180"/><circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="140"/>
+        <circle cx="200" cy="200" r="120"/><circle cx="200" cy="200" r="100"/>
+      </g>
+      <g fill="none" stroke="#4C7A73" stroke-opacity="0.6">
+        <circle cx="200" cy="200" r="80"/><circle cx="200" cy="200" r="60"/>
+      </g>
+      <circle cx="200" cy="200" r="40" fill="#3B1418" stroke="#C08A4E" stroke-width="2"/>
+      <text x="200" y="206" text-anchor="middle" fill="#E0B478" font-family="Space Mono, monospace" font-size="11">SIDE A</text>
+    </svg>
+  </div>
+</section>
+
+<section class="section-tight bg-deep">
+  <div class="wrap reveal">
+    <div class="section-head center">
+      <span class="label">Premium touch</span>
+      <h2>A room that feels as good as it sounds.</h2>
+      <p>The coffee, the speakers, the lighting and the seating are all chosen to make every visit feel intentional.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="highlight-panel">
+        <h3>Curated acoustics</h3>
+        <p>Custom speaker placement and soft surfaces let the records breathe — the kind of sound that makes you stop checking your phone.</p>
+      </div>
+      <div class="highlight-panel">
+        <h3>Small-batch roasting</h3>
+        <p>Beans are roasted in-house every week and served fresh, with a single-origin highlight released every Thursday.</p>
+      </div>
+      <div class="highlight-panel">
+        <h3>Quiet rituals</h3>
+        <p>Whether you’re here for a standing bar cup or a private room booking, we design the night around listening.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SESSIONS TEASER ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">What's on</span>
+      <h2>Listening sessions &amp; private bookings</h2>
+      <p>Three ways to spend an evening here — pick your volume.</p>
+    </div>
+    <div class="card-grid-3 reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="none" stroke="#C08A4E" stroke-width="2"/><circle cx="22" cy="22" r="6" fill="#C08A4E"/></svg>
+        <h3>Resident Selector Nights</h3>
+        <p>Thu–Sat, 7–11pm. Our residents run a themed set from the shelves — no requests, just trust the selector.</p>
+        <span class="meta">Walk-in · no cover</span>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><rect x="6" y="6" width="32" height="32" rx="4" fill="none" stroke="#C08A4E" stroke-width="2"/><path d="M16 22h12M22 16v12" stroke="#C08A4E" stroke-width="2"/></svg>
+        <h3>Bring Your Own Wax</h3>
+        <p>Tuesdays. Bring up to 3 records from your own collection and take a 20-minute turn on the main system.</p>
+        <span class="meta">₹150 cover, includes filter coffee</span>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 44 44"><path d="M8 34V16l14-8 14 8v18" fill="none" stroke="#C08A4E" stroke-width="2" stroke-linejoin="round"/></svg>
+        <h3>Private Listening Room</h3>
+        <p>Book the back room for a small group — your own crate, your own volume, snacks and pour-over on request.</p>
+        <span class="meta">From ₹2,500 for 2 hours</span>
+      </div>
+    </div>
+    <div class="text-center reveal" style="margin-top:36px;"><a href="sessions.html" class="btn-ghost">View Full Schedule →</a></div>
+  </div>
+</section>
+
+<!-- ================= MENU TEASER ================= -->
+<section class="bg-wine">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:56px;">
+    <div class="reveal">
+      <span class="label">From the counter</span>
+      <h2 style="margin-top:10px;">Roastery menu</h2>
+      <p style="margin-bottom:26px;">Small-batch beans, roasted in-house every Monday. A few favorites below — full menu has coffee, tea, and food.</p>
+      <a href="menu.html" class="btn-ghost">See Full Menu →</a>
+    </div>
+    <div class="reveal">
+      <div class="menu-item"><div><span class="name">Side A Filter</span><span class="desc">House blend — chocolate, orange peel, low acidity</span></div><span class="price">₹180</span></div>
+      <div class="menu-item"><div><span class="name">Needle Drop Espresso</span><span class="desc">Single-origin shot, changes monthly</span></div><span class="price">₹150</span></div>
+      <div class="menu-item"><div><span class="name">Vinyl Toast</span><span class="desc">Sourdough, whipped ricotta, chili honey</span></div><span class="price">₹220</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">Inside the room</span>
+      <h2>A feel for the space</h2>
+    </div>
+    <div class="gallery-strip reveal">
+      <div class="gallery-card g1"><span>The main rig</span><p>Vintage turntable, lush speakers, and a cabinet full of carefully chosen records for the night.</p></div>
+      <div class="gallery-card g2"><span>Roasting on Mondays</span><p>Small batches are roasted in-house, with each lot brewed by hand and served the same week.</p></div>
+      <div class="gallery-card g3"><span>The crate wall</span><p>1,400 records in rotation — jazz, ambient, Tamil film score and deep cuts from across the globe.</p></div>
+      <div class="gallery-card g4"><span>Back listening room</span><p>A private space for friends, special requests and a quieter way to hear every side.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="bg-wine">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin-left:auto; margin-right:auto;">
+      <span class="label">From the regulars</span>
+      <h2>What people say after their first visit</h2>
+    </div>
+    <div class="carousel reveal">
+      <div class="carousel-track">
+        <div class="carousel-slide active">
+          <p>"First place I've been where nobody skips to the single. You just sit with the whole record. Changed how I listen at home too."</p>
+          <span class="who">— Tuesday regular, Bring Your Own Wax night</span>
+        </div>
+        <div class="carousel-slide">
+          <p>"The cold brew alone is worth the trip, but I keep coming back for the Thursday sets. Never know what's going on the platter."</p>
+          <span class="who">— First-time visitor, Resident Selector Night</span>
+        </div>
+        <div class="carousel-slide">
+          <p>"Booked the back room for a friend's birthday. She brought her dad's old jazz collection — best two hours we've had all year."</p>
+          <span class="who">— Private Listening Room guest</span>
+        </div>
+      </div>
+      <div class="carousel-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band">
+  <div class="wrap reveal">
+    <span class="label">Come sit with a record</span>
+    <h2>No loyalty app, no rewards points — just come back because it's good.</h2>
+    <p>Walk-ins welcome for coffee any time we're open. For listening nights and the private room, reserving ahead means an actual seat by the speakers.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-dark">Reserve a Table</a>
+      <a href="sessions.html" class="btn-outline-dark">Book the Private Room</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Static &amp; Stems</div>
+        <p>A small vinyl listening bar and coffee roastery. One record at a time, played all the way through.</p>
+        <div class="newsletter" style="margin-top:20px;">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="button">Join</button>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sessions.html">Listening Sessions</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Visit Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>14 Analog Lane, Bilaspur</li>
+          <li>hello@staticandstems.in</li>
+          <li>+91 98765 43210</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Discogs Wantlist</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Static &amp; Stems. A concept site — built as an AI website-generation exercise.</span>
+      <span>Designed &amp; generated with Claude.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script type="module" src="assets/js/build/main.js"></script>
+</body>
+</html>
