@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "node ./node_modules/typescript/bin/tsc --project tsconfig.json",
+    "vercel-build": "npm run build && mkdir -p dist && cp -r *.html assets favicon.ico dist/ 2>/dev/null || true",
     "watch": "node ./node_modules/typescript/bin/tsc --project tsconfig.json --watch",
     "serve": "npx http-server -c-1 . -p 8080",
     "serve:8081": "npx http-server -c-1 . -p 8081",
